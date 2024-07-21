@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left justify the container */
+    margin-left: 10px; /* Optional: add some padding to the left */
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Left justify the buttons wrapper */
+    width: 310px; /* Set width to fit three 100px squares + margins */
+    position: relative; /* Needed for absolute positioning of the reset button */
+}
+
+.buttons {
+    display: flex;
+}
+
+.colorSquare {
+    height: 100px;
+    width: 100px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px; /* Initial font size */
+    line-height: 100px; /* Vertically center the text */
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+.reset-wrapper {
+    width: 310px; /* Match the width of the buttons-wrapper */
+    display: flex;
+    justify-content: center; /* Center the reset button horizontally */
+    position: relative;
+    top: 20px; /* Position the reset-wrapper below the buttons */
+}
+
+#resetButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black; /* Black background */
+    color: yellow; /* Yellow text */
+    border: none; /* No border */
+    border-radius: 50%; /* Round shape */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    font-size: 16px; /* Font size for text */
+    font-weight: 600; /* Make text 50% thicker */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
